@@ -1,0 +1,115 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        ========
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header card-header-icon" data-background-color="red">
+                                    <i class="material-icons">perm_identity</i>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="card-title">Edit Profile -
+                                        <small class="category">Complete your profile</small>
+                                    </h4>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label"> Họ và Tên</label>
+                                                    <input type="text" value="{{userinfo[0].fullname}}" class="form-control" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Địa chỉ Email</label>
+                                                    <input type="email" ngModel="{{userinfo[0].email}}" #Email ngModel name="Email" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Lớp</label>
+                                                    <input type="text" ngModel="{{userinfo[0].class}}" #Class ngModel name="Class" Class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-md-offset-6">
+                                                <mat-input-container>
+                                                    <input matInput [matDatepicker]="datepickerYear" placeholder="Ngày sinh" ngModel="{{userinfo[0].birth}}" #Birth ngModel name="Birth" Class="form-control" required>
+                                                </mat-input-container>
+                                                <mat-datepicker #datepickerYear [startView]="'year'">
+                                                </mat-datepicker>
+                                                <mat-datepicker-toggle matSuffix [for]="datepickerYear">
+                                                </mat-datepicker-toggle>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Địa chỉ</label>
+                                                    <input type="text" ngModel="{{userinfo[0].address}}" #Address ngModel name="Address" Class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Quê quán</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Số điện thoại</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>About Me</label>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label"> Tùng núi ngồi trên tao ngồi dưới
+                                                        </label>
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-danger pull-right">Update Profile</button>
+                                        <div class="clearfix"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="#pablo">
+                                        <img class="img" src="../../assets/img/1.jpg" />
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="category text-gray">CEO / Co-Founder</h6>
+                                    <h4 class="card-title">{{userinfo[0].fullname}}</h4>
+                                    <p class="description">
+                                        ZERO 9 <br> wellcome to #Zero9 <br> Không cần phải cuốn hút thật nhiều mà anh vẫn cho mọi người high và fly all night play all
+                                        night 
+                                    </p>
+                                    <a href="#pablo" class="btn btn-danger btn-round">Follow</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            =========
+        </div>
+    </div>
+</div>
